@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rajvi | Portfolio</title>
+
+    <style>
+   
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+
+       background: linear-gradient(rgba(253,246,236,0.7), rgba(248,237,227,0.7)),
+            url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    text-align: center;
+}
+    header {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        color: #5c4b3b;
+        letter-spacing: 2px;
+    }
+
+    /* Profile Photo */
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 20px 0;
+        object-fit: cover;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Menu */
+    .menu {
+        margin-bottom: 20px;
+    }
+
+    .menu-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 8px;
+        border-radius: 25px;
+        background-color: #d6c1a3;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .menu-btn:hover {
+        background-color: #bfa88a;
+        transform: translateY(-2px);
+    }
+
+    /* Sections */
+    .content {
+        display: none;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 800px;
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        animation: fadeIn 0.5s ease;
+    }
+
+    .content:target {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(10px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #5c4b3b;
+    }
+
+    /* Education */
+    .edu-item {
+        width: 90%;
+        margin: 0 auto 20px auto;
+        text-align: left;
+    }
+
+    .edu-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .edu-line span {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .edu-desc {
+        font-size: 15px;
+        margin-top: 6px;
+        color: #6b5b4b;
+    }
+
+    /* Lists */
+    ul {
+        text-align: left;
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+        color: #7a6a58;
+    }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>RAJVI GAWALI</h1>
+
+    <img src="profile.jpeg" class="profile-pic">
+
+    <p>Aspiring Developer | Creative Thinker</p>
+</header>
+
+<div class="menu">
+    <a href="#about" class="menu-btn">About</a>
+    <a href="#education" class="menu-btn">Education</a>
+    <a href="#skills" class="menu-btn">Skills</a>
+    <a href="#projects" class="menu-btn">Projects</a>
+    <a href="#achievements" class="menu-btn">Achievements</a>
+    <a href="#goals" class="menu-btn">Future Goals</a>
+    <a href="#hobbies" class="menu-btn">Hobbies</a>
+    <a href="#contact" class="menu-btn">Contact</a>
+</div>
+
+<!-- About -->
+<div id="about" class="content">
+    <h2>About Me</h2>
+    <p>Hello! I am Rajvi, a passionate first-year student who loves exploring technology and creativity. I enjoy building small projects and continuously improving my programming skills.</p>
+    <p>I believe in learning by doing and turning ideas into meaningful digital experiences.</p>
+</div>
+
+<!-- Education -->
+<div id="education" class="content">
+    <h2>Education</h2>
+
+    <div class="edu-item">
+        <div class="edu-line">
+            <span>MIT Academy Of Engineering</span>
+            <span>2025 - Present</span>
+        </div>
+        <div class="edu-desc">Bachelor's Degree (First Year)</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-line">
+            <span>Kabira Convent</span>
+            <span>2024 - 2025</span>
+        </div>
+        <div class="edu-desc">Higher Secondary Education (12th)</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-line">
+            <span>Kendriya Vidyalaya</span>
+            <span>2022 - 2023</span>
+        </div>
+        <div class="edu-desc">Secondary Education (10th)</div>
+    </div>
+</div>
+
+<!-- Skills -->
+<div id="skills" class="content">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>Python Programming</li>
+        <li>C Programming</li>
+        <li>Problem Solving & Logical Thinking</li>
+    </ul>
+</div>
+
+<!-- Projects -->
+<div id="projects" class="content">
+    <h2>Projects</h2>
+
+    <h3>C Programming Mini Calculator</h3>
+    <p>Developed a calculator program supporting multiple operations.</p>
+
+    <h3>Student Result System</h3>
+    <p>A Python program to calculate and display student results.</p>
+</div>
+
+<!-- Achievements -->
+<div id="achievements" class="content">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Participated in technical and cultural events.</li>
+        <li>Completed multiple mini programming projects.</li>
+        <li>Recognized for teamwork and presentation skills.</li>
+    </ul>
+</div>
+
+<!-- Future Goals -->
+<div id="goals" class="content">
+    <h2>Future Goals</h2>
+
+    <div class="edu-item">
+        <div class="edu-desc">🎯 Become a skilled software developer</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-desc">🌐 Master web & full stack development</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-desc">🤖 Learn AI & advanced technologies</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-desc">💼 Get internship in a reputed company</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-desc">🌍 Contribute to open-source projects</div>
+    </div>
+
+</div>
+
+<!-- Hobbies -->
+<div id="hobbies" class="content">
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Exploring new technologies</li>
+        <li>Participating in events</li>
+        <li>Listening to music</li>
+        <li>Creative designing</li>
+    </ul>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="content">
+    <h2>Contact</h2>
+    <p>Email: gawalirajvi@gmail.com</p>
+    <p>LinkedIn: www.linkedin.com/in/rajvi-gawali</p>
+    <p>Phone: 8308281777</p>
+</div>
+
+<footer>
+    © 2026 Rajvi | Designed elegantly
+</footer>
+
+</body>
+</html>
